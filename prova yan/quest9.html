@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilo para a caixa */
+    .caixa {
+      width: 200px;
+      height: 100px;
+      background-color: transparent;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Estilo para o texto */
+    .texto {
+      font-size: 18px;
+    }
+
+    /* Estilo para a caixa quando clicada */
+    .caixa.clicada {
+      background-color: green;
+    }
+
+    /* Estilo para o texto quando clicado */
+    .caixa.clicada .texto {
+      color: white;
+    }
+
+    /* Estilo para a caixa quando passar o mouse */
+    .caixa:hover {
+      background-color: blue;
+    }
+
+    /* Estilo para o texto quando passar o mouse */
+    .caixa:hover .texto {
+      color: white;
+    }
+
+    /* Estilo para a caixa quando o mouse sai */
+    .caixa:hover {
+      background-color: red;
+    }
+
+    /* Estilo para o texto quando o mouse sai */
+    .caixa:hover .texto {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa" onclick="clicar()" onmouseover="passarMouse()" onmouseout="sairMouse()">
+    <div class="texto">Clique aqui</div>
+  </div>
+
+  <script>
+
+    function passarMouse() {
+      var caixa = document.querySelector('.caixa');
+      caixa.style.backgroundColor = 'blue';
+      caixa.innerHTML = '<div class="texto">Passou</div>';
+    }
+
+    function clicar() {
+      var caixa = document.querySelector('.caixa');
+      caixa.classList.add('clicada');
+      caixa.innerHTML = '<div class="texto">Clicou</div>';
+    }
+
+    function sairMouse() {
+      var caixa = document.querySelector('.caixa');
+      caixa.style.backgroundColor = 'red';
+      caixa.innerHTML = '<div class="texto">Saiu</div>';
+    }
+  </script>
+</body>
+</html>
+

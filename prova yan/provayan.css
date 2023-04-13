@@ -1,0 +1,46 @@
+/* Reset de margens e preenchimentos */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 25;
+    padding: 0;
+  }
+  
+  /* Estilo global para o corpo do blog */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(132, 255, 214, 0.801);
+    line-height: 1.6;
+  }
+  
+  /* Estilo para os títulos dos posts */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para os parágrafos dos posts */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para os links nos posts */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Estilo para os links nos posts quando passam o mouse por cima */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Estilo para o rodapé do blog */
+  footer {
+    background-color: #12dddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
